@@ -1,0 +1,17 @@
+version: "3"
+services:
+  prediction:
+    image: prediction:latest
+    container_name: prediction
+    restart: always
+    volumes: 
+      - ".:/usr/src/app"
+    ports:
+     - "8888:8888"
+    env_file:
+      - environment.env
+
+## setup a environment.env file with ALPHA_VANTAGE_KEY=YOUR_KEY
+## docker build . -t prediction
+## docker-compose up -d
+## docker exec -it prediction jupyter notebook --allow-root --ip=0.0.0.0

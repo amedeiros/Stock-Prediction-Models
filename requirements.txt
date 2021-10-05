@@ -1,0 +1,13 @@
+jupyterlab==3.0.5
+numpy
+pandas
+matplotlib
+seaborn
+tensorflow
+sklearn
+sklearn
+tqdm
+finviz==1.4.2
+alpha-vantage==2.3.1
+yfinance==0.1.63
+flask
